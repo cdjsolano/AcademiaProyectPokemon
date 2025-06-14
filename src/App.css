@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.pokes {
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: none;
+  gap: 5px;
+  padding: 5px;
+
+}
+
+.pokemon {
+  display: grid;
+  grid-template-columns: auto;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+ 
+}
+
+.pokemon .imagen {
+
+    grid-column: 1 / span 1;
+}
+
+.pokemon .nombre {
+   grid-column: 1 / span 1;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
