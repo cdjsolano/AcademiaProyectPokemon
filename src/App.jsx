@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import { Routes, Route, Link } from 'react-router-dom';
-
 import Normal from './pages/Normal'
 import Agua from './pages/Agua'
 import Bicho from './pages/Bicho'
@@ -22,8 +21,6 @@ function App() {
    
     <>
     <MenuBar/>
-    
-
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/normal" element={<Normal />} />
