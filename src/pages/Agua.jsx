@@ -1,8 +1,5 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
-import Pokemons from '../componets/Pokemons';
-import MenuBar from '../componets/MenuBar';
-import Principalarray from '../componets/principalArray';
+
 
 
 function Agua({ pokemones }) {
