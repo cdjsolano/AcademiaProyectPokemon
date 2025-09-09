@@ -13,7 +13,7 @@ import Fuego from './pages/Fuego'
 import Hada from './pages/Hada'
 import Planta from './pages/Planta'
 import MenuBar from './componets/MenuBar';
-import Iconoslu from './pages/Iconoslu';
+
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
       <Route path="/planta" element={<Planta />} />
       <Route path="/tierra" element={<Tierra />} />
       <Route path="/venon" element={<Venon />} />
-      <Route path="/Iconoslu" element={<Iconoslu />} />
+      
     </Routes>
     <br />
     <br />

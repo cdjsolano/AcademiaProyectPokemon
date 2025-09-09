@@ -4,7 +4,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 import homeIcon from '../icons/homeIcon.png'
 import Categories from '../componets/Categories'
 import Home from '../pages/Home'
-import IconGallery from './IconGallery'
+
 
 function MenuBar() {
     return (
@@ -19,9 +19,7 @@ function MenuBar() {
 
             </div>
 
-            <button className='homebtn'>
-                 <Link to={'/Iconoslu'}>Galeria de iconos</Link>
-                </button>
+           
         </div>
     )
 }
