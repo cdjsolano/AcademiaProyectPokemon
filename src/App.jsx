@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Routes, Route, Link } from 'react-router-dom';
-import Principalarray from './componets/principalArray';
+
 import Normal from './pages/Normal'
 import Agua from './pages/Agua'
 import Bicho from './pages/Bicho'
