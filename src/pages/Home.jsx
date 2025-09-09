@@ -1,15 +1,18 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import Pokemons from '../componets/Pokemons'
+import MenuBar from '../componets/MenuBar'
+import Principalarray from '../componets/principalArray'
 
 
-function Home() {
+function Home({ pokemones }) {
+  
+
+  
   return (
-    <div>Home
-        <Pokemons></Pokemons>
-        <Link to={'/to Agua'}> Agua </Link>
-
-
+    <div>
+      <br />
+     <Pokemons/>
     </div>
   )
 }

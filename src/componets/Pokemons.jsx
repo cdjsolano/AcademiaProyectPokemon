@@ -328,7 +328,7 @@ function Pokemons() {
         <div className="pokes">
             {pokemons.map((monsters, index) => (
                 <div key={index} className='pokemon'>
-                    <img src={monsters.imagen} alt="" className='imagen' />
+                    <img src={monsters.imagen} alt="" className='imagen'/>
                     <h3 className='nombre'>Nombre : {monsters.nombre}</h3>
                     <h3 className='tipo'> Tipo : {monsters.tipo}</h3>
                     <p className='description'> Descripcion : {monsters.descripcion}</p>

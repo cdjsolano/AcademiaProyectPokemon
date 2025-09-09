@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Routes, Route, Link } from 'react-router-dom';
+import Principalarray from './componets/principalArray';
 import Normal from './pages/Normal'
 import Agua from './pages/Agua'
 import Bicho from './pages/Bicho'
@@ -11,13 +12,18 @@ import Home from './pages/Home';
 import Fuego from './pages/Fuego'
 import Hada from './pages/Hada'
 import Planta from './pages/Planta'
+import MenuBar from './componets/MenuBar';
+import Iconoslu from './pages/Iconoslu';
+
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
+   
     <>
-      
+    <MenuBar/>
+    
+
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/normal" element={<Normal />} />
@@ -29,7 +35,13 @@ function App() {
       <Route path="/planta" element={<Planta />} />
       <Route path="/tierra" element={<Tierra />} />
       <Route path="/venon" element={<Venon />} />
+      <Route path="/Iconoslu" element={<Iconoslu />} />
     </Routes>
+    <br />
+    <br />
+    <footer>
+    <p className='foot'>Todos los derechos reservados a Nintendo Co.</p>
+    </footer>
 
     </>
   )

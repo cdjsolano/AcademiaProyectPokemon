@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: justify;
 }
 
 .pokes {
@@ -10,8 +10,10 @@
   display: grid;
   grid-template-columns: auto auto auto;
   border: none;
-  gap: 5px;
+  border-radius: 10px;
+  gap: 15px;
   padding: 5px;
+  
 
 }
 
@@ -20,37 +22,77 @@
   grid-template-columns: auto;
   border: 1px solid lightblue;
   border-radius: 10px;
- 
+  padding: 20px;
+   background: #fafafa10;
+   backdrop-filter: blur(10.2px);
+   justify-items: center;
+
+
+
 }
 
 .pokemon .imagen {
-
-    grid-column: 1 / span 1;
+  display: flex;
+  grid-column: 1 / span 1;
+  width: 222px;
+  image-rendering: pixelated;
 }
 
 .pokemon .nombre {
-   grid-column: 1 / span 1;
+  grid-column: 1 / span 1;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homebtn {
+  position: relative;
+  border: 1px solid gray;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.iconh {
+  position: relative;
+  top: -15px;
+  right: 23px;
+  z-index: 2;
 }
 
-.card {
-  padding: 2em;
+.categList {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+
 }
 
-.read-the-docs {
-  color: #888;
+.categItem {
+  display: flex;
+  float: left;
+  padding-right: 25px;
+  height: 15px;
+  text-align: center;
+  vertical-align: text-top;
+}
+
+
+.categItem:hover {
+
+  font-style: italic;
+  font-size: 20px;
+  color: red;
+
+}
+
+.principalA {
+  display: flex;
+}
+
+.foot {
+
+  text-align: center;
+  color: aqua;
+  font-style: italic;
+  font-size: small;
 }

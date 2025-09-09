@@ -1,7 +1,9 @@
 import React from 'react'
+import Agua from '../pages/Agua';
+import Home from '../pages/Home';
 
-function Electrico() {
-  
+function Principalarray() {
+
     const pokemons = [
         {
             nombre: 'Bulbasaur',
@@ -197,7 +199,7 @@ function Electrico() {
         },
         {
             nombre: 'Pikachu',
-            tipo: 'Electrico',
+            tipo: 'Eléctrico',
             descripcion: 'Almacena electricidad en sus mejillas y la descarga cuando se enfada.',
             imagen: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png',
             estadisticas: { hp: 35, ataque: 55, defensa: 40, spAtaque: 50, spDefensa: 50, velocidad: 90 },
@@ -205,7 +207,7 @@ function Electrico() {
         },
         {
             nombre: 'Raichu',
-            tipo: 'Electrico',
+            tipo: 'Eléctrico',
             descripcion: 'Mayor capacidad eléctrica que Pikachu y cola en forma de rayo.',
             imagen: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png',
             estadisticas: { hp: 60, ataque: 90, defensa: 55, spAtaque: 90, spDefensa: 80, velocidad: 110 },
@@ -325,33 +327,17 @@ function Electrico() {
         }
     ];
 
-
-  return (
-    
-    <div>
-      <br />
-    <div className="pokes">
       
-      {pokemons.map((datos, index) => {
-        if (datos.tipo == "Electrico") {
-          return (
-            <div key={index} className='pokemon'>
-              <img src={datos.imagen} alt="" className='imagen' />
-              <h3 className='nombre'>Nombre : {datos.nombre}</h3>
-              <h3 className='tipo'> Tipo : {datos.tipo}</h3>
-              <p className='description'> Descripcion : {datos.descripcion}</p>
-            </div>
-          )
-        }
 
-      })}
+    return (
+        
+        <div className='principalA'>
+            
+            <Agua pokemones={pokemons} />
+            <Home pokemones={pokemons} />
 
-    </div>  
-    </div>
-
-
-  );
+        </div>
+    );
 }
 
-
-export default Electrico
+export default Principalarray
